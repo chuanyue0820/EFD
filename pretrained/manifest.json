@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "CelebA",
+    "scale": 2,
+    "iteration": 455000,
+    "seed": 10,
+    "filename": "EFD_CelebA_x2_iter455000.pth",
+    "sha256": "6b6a626bba59d4290fea057c12eed2fd6af5efd110aeeddbd02e48416abf432b",
+    "google_drive_folder": "https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link"
+  },
+  {
+    "dataset": "CelebA",
+    "scale": 4,
+    "iteration": 320000,
+    "seed": 10,
+    "filename": "EFD_CelebA_x4_iter320000.pth",
+    "sha256": "1b38624cd0bff8026038bb3cfa21954f2fafc74f28d523b952a1fae54fd459df",
+    "google_drive_folder": "https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link"
+  },
+  {
+    "dataset": "CelebA",
+    "scale": 8,
+    "iteration": 255000,
+    "seed": 10,
+    "filename": "EFD_CelebA_x8_iter255000.pth",
+    "sha256": "f7dfb4029c42621e54f9bf5a237be88859d0ad6d6cb18edd139f3813ef3d3cd7",
+    "google_drive_folder": "https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link"
+  },
+  {
+    "dataset": "Helen",
+    "scale": 2,
+    "iteration": 120000,
+    "seed": 10,
+    "filename": "EFD_Helen_x2_iter120000.pth",
+    "sha256": "e86654bf21f9976f99c7541920b46d6cad061ed4c02debf61317809901778974",
+    "google_drive_folder": "https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link"
+  },
+  {
+    "dataset": "Helen",
+    "scale": 4,
+    "iteration": 15000,
+    "seed": 10,
+    "filename": "EFD_Helen_x4_iter15000.pth",
+    "sha256": "e7eda38723cca894869cc28d44b7057353c0a4424dcebd589d633097709292e9",
+    "google_drive_folder": "https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link"
+  },
+  {
+    "dataset": "Helen",
+    "scale": 8,
+    "iteration": 5000,
+    "seed": 10,
+    "filename": "EFD_Helen_x8_iter5000.pth",
+    "sha256": "5303532194c80cc2eb6aba2f20022433c73699fa292fa3e684cf32415790b310",
+    "google_drive_folder": "https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link"
+  }
+]

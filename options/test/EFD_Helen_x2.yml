@@ -1,0 +1,52 @@
+name: EFD_Helen_x2
+model_type: SRModel
+scale: 2
+num_gpu: 1
+manual_seed: 10
+datasets:
+  test:
+    name: Helen
+    type: PairedImageDataset
+    dataroot_gt: datasets/Helen/test/HR
+    dataroot_lq: datasets/Helen/test/LR/x2
+    io_backend:
+      type: disk
+network_g:
+  type: EFD
+  upscale: 2
+  in_chans: 3
+  img_size: 64
+  img_range: 1.0
+  depth: 18
+  embed_dim: 60
+  num_heads: 6
+  expansion_factor: 2
+  split_size:
+  - 8
+  - 32
+  semantic_ch: 19
+  enable_edge_guidance: true
+  enable_sem_guidance: true
+  enable_sfa_symmetry: true
+  enable_cta_component: true
+  enable_dffn_ms_freq: true
+path:
+  pretrain_network_g: pretrained/EFD_Helen_x2_iter120000.pth
+  strict_load_g: true
+  param_key_g: params
+val:
+  save_img: true
+  suffix: EFD
+  pbar: true
+  metrics:
+    psnr:
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: true
+    ssim:
+      type: calculate_ssim
+      crop_border: 2
+      test_y_channel: true
+dist_params:
+  backend: nccl
+  port: 29500

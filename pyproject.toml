@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "efd-face-sr"
+version = "0.1.0"
+description = "EFD face super-resolution training and inference"
+readme = "README.md"
+requires-python = ">=3.8,<3.12"
+license = {file = "LICENSE"}
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["basicsr*"]
