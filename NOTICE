@@ -1,8 +1,0 @@
-EFD includes modified code derived from:
-- FreqFormer: https://github.com/JPWang-CS/FreqFormer
-- BasicSR: https://github.com/XPixelGroup/BasicSR
-The upstream Apache-2.0 license is retained in LICENSE.
-This release contains the EFD network and its training/inference support.
-Changes include EFD naming, portable configurations, checkpoint bookkeeping-key
-handling, side-effect-free network logging, CPU resume support, and release tools.
-Upstream authorship and existing copyright notices are retained.
