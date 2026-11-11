@@ -24,7 +24,8 @@ conda activate efd
 python -m pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cu121
 python -m pip install -r requirements.txt
 python -m pip install -e . --no-deps
-``
+```
+
 
 ## Datasets
 
