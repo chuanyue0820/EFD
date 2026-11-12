@@ -1,5 +1,5 @@
 
-## Installation
+## ⚙️Installation
 
 The reference experiment environment is:
 
@@ -27,7 +27,7 @@ python -m pip install -r requirements.txt
 python -m pip install -e . --no-deps
 ```
 
-## Datasets
+## 📄Datasets
 
 Download the author-provided, processed CelebA and Helen datasets from [Google Drive](https://drive.google.com/drive/folders/1kEi1WrSiOtaD2fb7fjfRnSnbMSuIhqNC?usp=drive_link). Extract them and arrange the folders as follows:
 
@@ -60,7 +60,7 @@ We additionally provide a CelebA test set for evaluating face super-resolution o
 
 Download the dataset from [Google Drive](https://drive.google.com/drive/folders/1R64aUW52bP7pDccPUrn3dJDhMiCdqYIM?usp=drive_link). The exact image filenames and corresponding identity IDs are listed in `data_splits/identity_disjoint_test.txt`.
 
-## Pretrained Models
+## 😸Pretrained Models
 
 Download the six pretrained models from [Google Drive](https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link) and put them directly in `pretrained/`:
 
@@ -105,6 +105,6 @@ python test.py -opt options/test/EFD_Helen_x4.yml
 python test.py -opt options/test/EFD_Helen_x8.yml
 ```
 
-## Acknowledgements
+## 🌊Acknowledgements
 
 This codebase is built on [BasicSR](https://github.com/XPixelGroup/BasicSR).
