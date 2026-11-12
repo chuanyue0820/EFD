@@ -1,3 +1,4 @@
+
 ## Installation
 
 The reference experiment environment is:
@@ -26,7 +27,6 @@ python -m pip install -r requirements.txt
 python -m pip install -e . --no-deps
 ```
 
-
 ## Datasets
 
 Download the author-provided, processed CelebA and Helen datasets from [Google Drive](https://drive.google.com/drive/folders/1kEi1WrSiOtaD2fb7fjfRnSnbMSuIhqNC?usp=drive_link). Extract them and arrange the folders as follows:
@@ -54,6 +54,12 @@ datasets/
 
 Each HR/LR pair must have the same filename, for example `HR/1.png` and `LR/x4/1.png`. The historical CelebA split contains 20,000 training images and 2,000 test images. Local numeric names are processed-image names, not a recovered complete mapping to raw CelebA JPEGs. Use the author's processed split for comparisons with the reported experiments; do not substitute a newly aligned or randomly split dataset.
 
+### Identity-Disjoint CelebA Test Set
+
+We additionally provide a CelebA test set for evaluating face super-resolution on unseen identities. It contains **2,000 images from 1,340 identities** and was constructed with **random seed 10**. The test images follow the same preprocessing and bicubic degradation protocol as the original CelebA test set. This supplementary set is provided separately from the original benchmark split.
+
+Download the dataset from [Google Drive](https://drive.google.com/drive/folders/1R64aUW52bP7pDccPUrn3dJDhMiCdqYIM?usp=drive_link). The exact image filenames and corresponding identity IDs are listed in `data_splits/identity_disjoint_test.txt`.
+
 ## Pretrained Models
 
 Download the six pretrained models from [Google Drive](https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link) and put them directly in `pretrained/`:
@@ -69,36 +75,36 @@ Download the six pretrained models from [Google Drive](https://drive.google.com/
 
 ## Training
 
-Run the following scripts.
+Run the following scripts:
 
 ```bash
 # CelebA
-CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/EFD_CelebA_x2.yml
-CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/EFD_CelebA_x4.yml
-CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/EFD_CelebA_x8.yml
+python train.py -opt options/train/EFD_CelebA_x2.yml
+python train.py -opt options/train/EFD_CelebA_x4.yml
+python train.py -opt options/train/EFD_CelebA_x8.yml
 
 # Helen
-CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/EFD_Helen_x2.yml
-CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/EFD_Helen_x4.yml
-CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/EFD_Helen_x8.yml
+python train.py -opt options/train/EFD_Helen_x2.yml
+python train.py -opt options/train/EFD_Helen_x4.yml
+python train.py -opt options/train/EFD_Helen_x8.yml
 ```
+
 ## Testing
+
 After downloading the processed test set and pretrained model, run:
 
 ```bash
 # CelebA
-CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/EFD_CelebA_x2.yml
-CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/EFD_CelebA_x4.yml
-CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/EFD_CelebA_x8.yml
+python test.py -opt options/test/EFD_CelebA_x2.yml
+python test.py -opt options/test/EFD_CelebA_x4.yml
+python test.py -opt options/test/EFD_CelebA_x8.yml
 
 # Helen
-CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/EFD_Helen_x2.yml
-CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/EFD_Helen_x4.yml
-CUDA_VISIBLE_DEVICES=0 python test.py -opt options/test/EFD_Helen_x8.yml
+python test.py -opt options/test/EFD_Helen_x2.yml
+python test.py -opt options/test/EFD_Helen_x4.yml
+python test.py -opt options/test/EFD_Helen_x8.yml
 ```
 
+## Acknowledgements
 
-
-
-
-
+This codebase is built on [BasicSR](https://github.com/XPixelGroup/BasicSR).
