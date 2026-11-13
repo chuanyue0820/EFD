@@ -56,7 +56,7 @@ Each HR/LR pair must have the same filename, for example `HR/1.png` and `LR/x4/1
 
 ### Identity-Disjoint CelebA Test Set
 
-We additionally provide a CelebA test set for evaluating face super-resolution on unseen identities. It contains **2,000 images from 1,340 identities** and was constructed with **random seed 10**. The test images follow the same preprocessing and bicubic degradation protocol as the original CelebA test set. This supplementary set is provided separately from the original benchmark split.
+We additionally provide a CelebA test set for evaluating face super-resolution on unseen identities. It contains **2,000 images from 1,340 identities** . The test images follow the same preprocessing and bicubic degradation protocol as the original CelebA test set. This supplementary set is provided separately from the original benchmark split.
 
 Download the dataset from [Google Drive](https://drive.google.com/drive/folders/1R64aUW52bP7pDccPUrn3dJDhMiCdqYIM?usp=drive_link). The exact image filenames and corresponding identity IDs are listed in `identity_disjoint_test.txt`.
 
