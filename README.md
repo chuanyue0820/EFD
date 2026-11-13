@@ -62,7 +62,7 @@ Download the dataset from [Google Drive](https://drive.google.com/drive/folders/
 
 ## 😸Pretrained Models
 
-Download the six pretrained models from and put them directly in `pretrained/`:
+Download the six pretrained models from [Google Drive](https://drive.google.com/drive/folders/1Ic0X1BBy0VXCf_oZfzk-V-cTTX8-SmF4?usp=drive_link) and put them directly in `pretrained/`:
 
 | Dataset | Scale | Filename |
 |:--|:--:|:--|
