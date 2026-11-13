@@ -62,16 +62,16 @@ Download the dataset from [Google Drive](https://drive.google.com/drive/folders/
 
 ## 😸Pretrained Models
 
-Download the six pretrained models from [Google Drive](https://drive.google.com/drive/folders/1tEDt-aw5ZJq2hmuIsvw5HlgEG_ssRIaN?usp=drive_link) and put them directly in `pretrained/`:
+Download the six pretrained models from and put them directly in `pretrained/`:
 
 | Dataset | Scale | Filename |
 |:--|:--:|:--|
-| CelebA | ×2 | `EFD_CelebA_x2_iter455000.pth` |
-| CelebA | ×4 | `EFD_CelebA_x4_iter320000.pth` |
-| CelebA | ×8 | `EFD_CelebA_x8_iter255000.pth` |
-| Helen | ×2 | `EFD_Helen_x2_iter120000.pth` |
-| Helen | ×4 | `EFD_Helen_x4_iter15000.pth` |
-| Helen | ×8 | `EFD_Helen_x8_iter5000.pth` |
+| CelebA | ×2 | `EFD_CelebA_x2.pth` |
+| CelebA | ×4 | `EFD_CelebA_x4.pth` |
+| CelebA | ×8 | `EFD_CelebA_x8.pth` |
+| Helen | ×2 | `EFD_Helen_x2.pth` |
+| Helen | ×4 | `EFD_Helen_x4.pth` |
+| Helen | ×8 | `EFD_Helen_x8.pth` |
 
 ## Training
 
